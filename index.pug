@@ -8,36 +8,36 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
     link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="./css/style.min.css")
-    //- link(rel="stylesheet" href="./scss/style.scss")
+    link(rel="stylesheet" href="./src/css/style.min.css")
+    //- link(rel="stylesheet" href="./src/scss/style.scss")
   body.is_scroll(onClick="hideMenu(event)") 
     .container
       aside
         header.header_aside 
           a.logo 
             svg(width="37" height="37")
-              use(xlink:href="./svg/sprite.svg#logo")
+              use(xlink:href="./src/svg/sprite.svg#logo")
             span Dashboard#[sub.sub_logo v.01]
         nav 
           ul.nav
             each link in data 
               li.menu_list
                 svg(class=link.svgName width=link.size height=link.size)
-                  use(xlink:href=`./svg/sprite.svg#` + link.svgName)
+                  use(xlink:href=`./src/svg/sprite.svg#` + link.svgName)
                 p.nav_link #{link.name}
                 if(link.nameButton)
                   button(type="button")
                     svg.stroke(width=link.sizeButton height=link.sizeButton)
-                      use(xlink:href=`./svg/sprite.svg#` + link.nameButton)
+                      use(xlink:href=`./src/svg/sprite.svg#` + link.nameButton)
         .manager 
-          img(src="./images/manager.png", alt="manager")
+          img(src="./src/images/manager.png", alt="manager")
           .persone 
             h3.manager_name Evano
             p.manager_major Project Manager
       main
         header 
           h1.main_tytle 
-            img(src="./images/hello.png", alt="hello")
+            img(src="./src/images/hello.png", alt="hello")
             button.button_menu(type="button" onclick="showMenu()") Menu
         section.page 
           h2.main_title.visually_hidden main
@@ -50,7 +50,7 @@ html(lang="en")
                 input.search_input(type="text" placeholder="Search")
                 button.search_button(type="button")
                   svg(width="24" height="24")
-                    use(xlink:href="./svg/sprite.svg#search") 
+                    use(xlink:href="./src/svg/sprite.svg#search") 
           .page_container 
             table.table 
               thead 
@@ -78,7 +78,7 @@ html(lang="en")
             .pagination
               button.pages(type="button")
                 svg.prev
-                  use(xlink:href="./svg/sprite.svg#prev") 
+                  use(xlink:href="./src/svg/sprite.svg#prev") 
               button.pages.active(type="button") 1
               button.pages(type="button") 2
               button.pages(type="button") 3
@@ -87,9 +87,9 @@ html(lang="en")
               button.pages(type="button") 40
               button.pages(type="button")
                 svg.next
-                  use(xlink:href="./svg/sprite.svg#next")  
+                  use(xlink:href="./src/svg/sprite.svg#next")  
     .backdrop
-  script(src="index.js")  
+  script(src="src/index.js")  
                   
 
 
