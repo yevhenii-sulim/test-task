@@ -6,7 +6,7 @@
   },
   "name": "test",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "src/index.html",
   "devDependencies": {"pug": "^3.0.2"},
   "scripts": {
     "start":"node main.js",

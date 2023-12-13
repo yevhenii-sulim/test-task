@@ -13,4 +13,4 @@ let data = {
 }
 
 let html = pug.renderFile('index.pug', data)
-fs.writeFileSync('index.html', html)
+fs.writeFileSync('src/index.html', html)
