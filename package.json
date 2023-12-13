@@ -1,6 +1,7 @@
 {
   "private": true,
   "homepage": "https://evgeniy210191.github.io/test-task/",
+  "source": "src/index.html",
   "dependencies": {
     
   },
