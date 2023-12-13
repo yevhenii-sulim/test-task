@@ -1,0 +1,8 @@
+[
+  { "size":24, "name":"Dashboard","svgName":"dashboard"},
+  {"size":24, "name":"Product","svgName":"product","nameButton":"following", "sizeButton":16},
+  {"size":24, "name":"Customers","svgName":"customers","nameButton":"following","sizeButton":16},
+  {"size":24, "name":"Income","svgName":"income","nameButton":"following","sizeButton":16},
+  {"size":24, "name":"Promote","svgName":"promote","nameButton":"following","sizeButton":16},
+  {"size":24, "name":"Help","svgName":"help","nameButton":"following","sizeButton":16}
+]
