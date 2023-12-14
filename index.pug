@@ -21,14 +21,15 @@ html(lang="en")
         nav 
           ul.nav
             each link in data 
-              li.menu_list
-                svg(class=link.svgName width=link.size height=link.size)
-                  use(xlink:href=`./src/svg/sprite.svg#` + link.svgName)
-                p.nav_link #{link.name}
-                if(link.nameButton)
-                  button(type="button")
-                    svg.stroke(width=link.sizeButton height=link.sizeButton)
-                      use(xlink:href=`./src/svg/sprite.svg#` + link.nameButton)
+              li
+                a.menu_list(href="#")
+                  svg(class=link.svgName width=link.size height=link.size)
+                    use(xlink:href=`./src/svg/sprite.svg#` + link.svgName)
+                  p.nav_link #{link.name}
+                  if(link.nameButton)
+                    button(type="button")
+                      svg.stroke(width=link.sizeButton height=link.sizeButton)
+                        use(xlink:href=`./src/svg/sprite.svg#` + link.nameButton)
         .manager 
           img(src="./src/images/manager.png", alt="manager")
           .persone 

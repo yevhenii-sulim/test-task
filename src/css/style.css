@@ -232,7 +232,7 @@ aside {
 }
 
 .header_aside {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .product,
@@ -246,6 +246,26 @@ aside {
 .income,
 .stroke {
   stroke: #9197b3;
+}
+
+.menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  width: 100%;
+  text-decoration: none;
+  color: #9197b3;
+  letter-spacing: 0.7px;
+}
+.menu_list:hover .dashboard, .menu_list:hover .customers, .menu_list:hover .income, .menu_list:hover .stroke {
+  stroke: #ffffff;
+}
+.menu_list:hover .product, .menu_list:hover .promote, .menu_list:hover .help {
+  fill: #ffffff;
 }
 
 .nav {
@@ -264,17 +284,18 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  height: 46px;
   border-radius: 8px;
-  padding-top: 10px;
-  padding-bottom: 34px;
-  padding-left: 11px;
-  padding-right: 8px;
-  color: #9197b3;
-  letter-spacing: 0.7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  padding-right: 5px;
 }
 .nav li:hover {
   background: #5932ea;
+}
+.nav li:hover .menu_list {
   color: #ffffff;
 }
 .nav li:hover .dashboard, .nav li:hover .customers, .nav li:hover .income, .nav li:hover .stroke {
