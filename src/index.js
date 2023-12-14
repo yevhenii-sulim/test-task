@@ -12,7 +12,9 @@ function showMenu() {
     padding-right:${lockPadding}
   `
   backdrop.classList.add('is-open')
+  window.addEventListener('keydown', closeMenuByesc)
 }
+
 function hideMenu(event) {
   if (
     event.target.closest('.menu_list') ||
@@ -22,4 +24,12 @@ function hideMenu(event) {
     body.removeAttribute('style')
     backdrop.classList.remove('is-open')
   }
+}
+function closeMenuByesc() {
+  if (body.querySelector('.backdrop.is-open')) {
+    aside.classList.remove('is-visibility')
+    body.removeAttribute('style')
+    backdrop.classList.remove('is-open')
+  }
+  window.removeEventListener('keydown', closeMenuByesc)
 }
