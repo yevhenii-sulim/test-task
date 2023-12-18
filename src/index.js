@@ -2,10 +2,9 @@ const [aside, body, backdrop] = ['aside', 'body', '.backdrop'].map((item) =>
   document.querySelector(item)
 )
 
-const lockPadding =
-  window.innerWidth - document.querySelector('.container').offsetWidth + 'px'
-
 function showMenu() {
+  const lockPadding =
+    window.innerWidth - document.querySelector('.container').offsetWidth + 'px'
   aside.classList.add('is-visibility')
   body.style = `
     overflow:hidden;
